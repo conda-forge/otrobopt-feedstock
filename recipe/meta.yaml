@@ -34,10 +34,11 @@ source:
   sha256: c7f5409e73579cce6f600f60725fec3275db95604a6886e0ea343a486a7462a1  # [win64 and py35]
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
+    - toolchain
     - python
     - cmake  # [not win]
     - swig  # [not win]
@@ -50,9 +51,6 @@ requirements:
 test:
   imports:
     - otrobopt
-  commands:
-    - conda inspect linkages -n _test otrobopt  # [not win]
-    - conda inspect objects -n _test otrobopt  # [osx]
 
 about:
   home: http://openturns.org/
