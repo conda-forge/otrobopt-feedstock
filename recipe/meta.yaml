@@ -54,6 +54,7 @@ test:
 
 about:
   home: http://openturns.org/
+  dev_url: https://github.com/openturns/otrobopt
   license: LGPLv3
   summary: Robust optimization module
 
