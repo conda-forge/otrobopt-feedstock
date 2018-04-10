@@ -1,4 +1,4 @@
-{% set version = "0.2" %}
+{% set version = "0.3" %}
 {% set ot_version = "1.10" %}
 
 package:
@@ -8,34 +8,34 @@ package:
 source:
   fn: otrobopt-{{ version }}.tar.gz  # [not win]
   url: https://github.com/openturns/otrobopt/archive/v{{ version }}.tar.gz  # [not win]
-  sha256: 8976f1e7d4664d1c6e9a2126f7218f642f0ddaf00e6ed3fc6d1c143448367130  # [not win]
+  sha256: 36bf235f73f4e9e7fb544df3bd60d8a75688d966bffd93cc5f7d41d2c6c9b19e
 
   fn: otrobopt-{{ version }}-py2.7-i686.exe  # [win32 and py27]
   url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otrobopt-{{ version }}-py2.7-i686.exe  # [win32 and py27]
-  sha256: e41363c24a08c07102fe0cff86ddbde418410653b91f435ca0843a3de98fd14f  # [win32 and py27]
+  sha256: 36bf235f73f4e9e7fb544df3bd60d8a75688d966bffd93cc5f7d41d2c6c9b19e
 
   fn: otrobopt-{{ version }}-py2.7-x86_64.exe  # [win64 and py27]
   url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otrobopt-{{ version }}-py2.7-x86_64.exe  # [win64 and py27]
-  sha256: 29c62dbbc83a4b20125614ab4bd1fb32b17a9fc633c4ece56863d6ca0954fba1  # [win64 and py27]
+  sha256: 36bf235f73f4e9e7fb544df3bd60d8a75688d966bffd93cc5f7d41d2c6c9b19e
 
   fn: otrobopt-{{ version }}-py3.5-i686.exe  # [win32 and py35]
   url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otrobopt-{{ version }}-py3.5-i686.exe  # [win32 and py35]
-  sha256: 7c6c43276f72d7be82fa9a95387e135bc6e347c2b0d2b32efc04b0ca56497785  # [win32 and py35]
+  sha256: 36bf235f73f4e9e7fb544df3bd60d8a75688d966bffd93cc5f7d41d2c6c9b19e
 
   fn: otrobopt-{{ version }}-py3.5-x86_64.exe  # [win64 and py35]
   url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otrobopt-{{ version }}-py3.5-x86_64.exe  # [win64 and py35]
-  sha256: ecd284abf77c7a5fd5aae14c9b8756b895a56071eadd638dc009cdaa52734d64  # [win64 and py35]
+  sha256: 36bf235f73f4e9e7fb544df3bd60d8a75688d966bffd93cc5f7d41d2c6c9b19e
 
   fn: otrobopt-{{ version }}-py3.6-i686.exe  # [win32 and py36]
   url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otrobopt-{{ version }}-py3.6-i686.exe  # [win32 and py36]
-  sha256: 287d888806694ff49047bb1795678d2fbec0d44e962ccb51ef90864757611f5c  # [win32 and py36]
+  sha256: 36bf235f73f4e9e7fb544df3bd60d8a75688d966bffd93cc5f7d41d2c6c9b19e
 
   fn: otrobopt-{{ version }}-py3.6-x86_64.exe  # [win64 and py36]
   url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otrobopt-{{ version }}-py3.6-x86_64.exe  # [win64 and py36]
-  sha256: bc5816f4d15cb208340fdccb2163382a66f99107853996d0445e222ea1c650d6  # [win64 and py36]
+  sha256: 36bf235f73f4e9e7fb544df3bd60d8a75688d966bffd93cc5f7d41d2c6c9b19e
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
