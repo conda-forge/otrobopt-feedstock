@@ -5,3 +5,4 @@ if errorlevel 1 exit 1
 
 %PKG_NAME%-%PKG_VERSION%-py%PY_VER%-%CPU_ARCH%.exe /userlevel=1 /S /FORCE /D=%PREFIX%
 if errorlevel 1 exit 1
+
