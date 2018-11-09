@@ -1,29 +1,16 @@
-{% set version = "0.3" %}
-{% set ot_version = "1.12rc1" %}
+{% set version = "0.4" %}
 
 package:
   name: otrobopt
   version: {{ version }}
 
 source:
-  fn: otrobopt-{{ version }}.tar.gz  # [not win]
-  url: https://github.com/openturns/otrobopt/archive/v{{ version }}.tar.gz  # [not win]
-  sha256: 36bf235f73f4e9e7fb544df3bd60d8a75688d966bffd93cc5f7d41d2c6c9b19e  # [not win]
-
-  fn: otrobopt-{{ version }}-py2.7-x86_64.exe  # [win64 and py27]
-  url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otrobopt-{{ version }}-py2.7-x86_64.exe  # [win64 and py27]
-  sha256: 5cfc1e0f87a17dba46c49416dd493634071e48d65a80df03dea3258977d96941  # [win64 and py27]
-
-  fn: otrobopt-{{ version }}-py3.6-x86_64.exe  # [win64 and py36]
-  url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otrobopt-{{ version }}-py3.6-x86_64.exe  # [win64 and py36]
-  sha256: 2351b7630719d72806fbf557120a06a2ba2b0d3b5168149f2417845735fd0031  # [win64 and py36]
-
-  fn: otrobopt-{{ version }}-py3.7-x86_64.exe  # [win64 and py37]
-  url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otrobopt-{{ version }}-py3.7-x86_64.exe  # [win64 and py37]
-  sha256: 911e07d1e42f3d7c34a59837690fd002542b895fe61c4127d31d21653d237c66  # [win64 and py37]
+  fn: otrobopt-{{ version }}.tar.gz
+  url: https://github.com/openturns/otrobopt/archive/v{{ version }}.tar.gz
+  sha256: 853eff2e7ff59a03424c9b03bf9d508c59ccde668cc056a7da312170475bc30c
 
 build:
-  number: 2
+  number: 0
 
 requirements:
   build:
@@ -45,7 +32,7 @@ test:
 about:
   home: http://openturns.org/
   license: LGPL3
-  license_file: COPYING.LESSER  # [not win]
+  license_file: COPYING.LESSER
   summary: Robust optimization module
 
 extra:
