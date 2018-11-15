@@ -10,7 +10,7 @@ source:
   sha256: 853eff2e7ff59a03424c9b03bf9d508c59ccde668cc056a7da312170475bc30c
 
 build:
-  number: 1000
+  number: 1001
 
 requirements:
   build:
@@ -20,7 +20,7 @@ requirements:
   host:
     - python
     - swig  # [not win]
-    - openturns  # [not win]
+    - openturns
   run:
     - python
     - openturns
