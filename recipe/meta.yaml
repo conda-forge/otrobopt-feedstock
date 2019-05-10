@@ -1,4 +1,4 @@
-{% set version = "0.4" %}
+{% set version = "0.5" %}
 
 package:
   name: otrobopt
@@ -7,10 +7,10 @@ package:
 source:
   fn: otrobopt-{{ version }}.tar.gz
   url: https://github.com/openturns/otrobopt/archive/v{{ version }}.tar.gz
-  sha256: 853eff2e7ff59a03424c9b03bf9d508c59ccde668cc056a7da312170475bc30c
+  sha256: c2e9f4e6a0ec728c03f0122eb4adf57f75b30ddddf00795a29cbdc59096c5706
 
 build:
-  number: 1001
+  number: 0
 
 requirements:
   build:
