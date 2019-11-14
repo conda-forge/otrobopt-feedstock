@@ -1,6 +1,5 @@
 {% set version = "0.6" %}
 
-
 package:
   name: otrobopt
   version: {{ version }}
@@ -11,7 +10,7 @@ source:
   sha256: c9dc9af451db8d404d9e40ca9c3f75050ebc0c1a5ae5276ed8119e99938cab61
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage('otrobopt', max_pin='x.x') }}
 
