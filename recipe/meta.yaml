@@ -10,7 +10,7 @@ source:
   sha256: 60da292fcbe58dfa5c35bd52c7a4afa825e9ca197c5c4d24bb95d971ba8ba69f
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage('otrobopt', max_pin='x.x') }}
 
@@ -23,10 +23,10 @@ requirements:
     - curl  # [win]
   host:
     - python
-    - openturns 1.17*
+    - openturns 1.18*
   run:
     - python
-    - openturns 1.17*
+    - openturns 1.18*
 
 test:
   imports:
