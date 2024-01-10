@@ -10,7 +10,7 @@ source:
   sha256: be9b2f448b191ffd623d928b3c96763e4db936d9598e0ebc74e2d928e30f744b
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage('otrobopt', max_pin='x.x') }}
 
