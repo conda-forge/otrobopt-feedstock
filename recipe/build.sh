@@ -9,4 +9,8 @@ cmake \
   -B build .
 
 cmake --build build --target install --parallel ${CPU_COUNT}
-ctest --test-dir build -R pyinstallcheck --output-on-failure -j${CPU_COUNT}
+
+if test "$CONDA_BUILD_CROSS_COMPILATION" != "1"
+then
+  ctest --test-dir build -R pyinstallcheck --output-on-failure -j${CPU_COUNT}
+fi
