@@ -1,4 +1,4 @@
-{% set version = "0.14" %}
+{% set version = "0.15" %}
 
 package:
   name: otrobopt
@@ -7,11 +7,10 @@ package:
 source:
   fn: otrobopt-{{ version }}.tar.gz
   url: https://github.com/openturns/otrobopt/archive/v{{ version }}.tar.gz
-  sha256: 18a72d49a62d29014d0e782179b69ac0a2e34f7377301e86ec4a9912640963b3
+  sha256: e8ba1a811f7abf0e1c6aafb8432a1280252d0550ae7a94147cc1df284f53d7c3
 
 build:
-  number: 1
-  skip: true  # [win and py>=313]
+  number: 0
   run_exports:
     - {{ pin_subpackage('otrobopt', max_pin='x.x') }}
 
