@@ -1,5 +1,5 @@
 context:
-  version: "0.18"
+  version: "0.19"
 
 package:
   name: otrobopt
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/openturns/otrobopt/archive/v${{ version }}.tar.gz
-  sha256: cc141aebc2c6cdbc03f38f4121dc3ef62c2c9b87d5d88fc13b2df360858125c1
+  sha256: fb599931f13acaccb6e46c976a5ac2b6d17aa95d8cfd71ee9867470bb61a86e3
 
 build:
   number: 0
